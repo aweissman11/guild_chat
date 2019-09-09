@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
+import { connect } from 'react-redux';
 
-import ChatContainer from './ChatContainer';
+import ChatContainer from './Components/ChatContainer';
 
 function App() {
   return (
@@ -11,4 +12,4 @@ function App() {
   );
 }
 
-export default App;
+export default connect(null, null)(App);
