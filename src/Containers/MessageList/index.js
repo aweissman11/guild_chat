@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Chip from '@material-ui/core/Chip';
 
-import { getMessages } from '../../Actions/Thunks/getMessages';
+import { addNewMessage } from '../../Actions/Thunks/addNewMessage';
 
 const useStyles = makeStyles(theme => ({
   thread: {
@@ -31,10 +31,12 @@ export const MessageList = (props) => {
       socket = io(':3001')
     }
 
-    socket.on('all messages', function (msgs) {
-      props.getMessages(msgs);
+    socket.on('chat message', function (msg) {
+      if (msg.length) {
+        props.addNewMessage(msg);
+      }
     });
-  }, [props.messages.length])
+  })
 
   return (
     <div className={classes.thread}>
@@ -64,7 +66,7 @@ export const mapStateToProps = ({ messages, currentTopic }) => ({ messages, curr
 
 
 export const mapDispatchToProps = (dispatch) => ({
-  getMessages: () => dispatch(getMessages())
+  addNewMessage: () => dispatch(addNewMessage())
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(MessageList);

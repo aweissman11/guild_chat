@@ -8,14 +8,13 @@ app.get('/', function (req, res) {
 });
 
 io.on('connection', function (socket) {
+  console.log('user connected');
   socket.on('chat message', function (msg) {
+    console.log('message sent:', JSON.stringify(msg));
     io.emit('chat message', msg);
-  });
-
-  socket.on('all messages', function (msgs) {
-    io.emit('all messages', msgs);
   });
 });
 
 http.listen(3001, function () {
+  console.log('listening on 3001');
 });
