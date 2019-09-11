@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import ChatContainer from './Components/ChatContainer';
 
-function App() {
+export function App() {
   return (
     <div className="App">
       <ChatContainer />

@@ -6,8 +6,8 @@ import TopicList from '../../Containers/TopicList';
 import MessageList from '../../Containers/MessageList';
 import InputBox from '../../Containers/InputBox';
 
-const useStyles = makeStyles(theme => ({
-  root: {
+export const useStyles = makeStyles(theme => ({
+  chatContainer: {
     margin: '30px',
     height: 'calc(100vh - 60px)',
     padding: theme.spacing(3, 2),
@@ -22,7 +22,7 @@ const ChatContainer = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className={classes.chatContainer}>
       <TopicList />
       <Paper>
         <MessageList />

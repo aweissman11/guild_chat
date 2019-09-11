@@ -11,7 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import Modal from '@material-ui/core/Modal';
 import { makeStyles } from '@material-ui/core/styles';
 
-import { addNewTopic } from '../../Actions/Thunks/addTopic';
+import { addNewTopic } from '../../Actions/Thunks/addNewTopic';
 import { getTopics } from '../../Actions/Thunks/getTopics';
 import { setCurrentTopic } from '../../Actions'
 import InputModal from '../InputModal';

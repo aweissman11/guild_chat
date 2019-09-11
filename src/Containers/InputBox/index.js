@@ -41,7 +41,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const InputBox = (props) => {
+export const InputBox = (props) => {
   const classes = useStyles();
   const [inputText, setInputText] = React.useState('');
 
