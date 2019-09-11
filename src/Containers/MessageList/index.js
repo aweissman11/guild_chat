@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
 
 let socket;
 
-const MessageList = (props) => {
+export const MessageList = (props) => {
   const classes = useStyles();
 
   useEffect(() => {

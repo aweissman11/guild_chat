@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const InputModal = (props) => {
+export const InputModal = (props) => {
   const classes = useStyles();
 
   const [modalStyle] = React.useState(getModalStyle);

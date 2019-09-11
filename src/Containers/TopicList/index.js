@@ -35,7 +35,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const TopicList = (props) => {
+export const TopicList = (props) => {
   const classes = useStyles();
 
   useEffect(() => {
