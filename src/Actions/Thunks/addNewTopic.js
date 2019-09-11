@@ -1,4 +1,4 @@
-import { addTopic } from '../'
+import { addTopic } from '..'
 
 export const addNewTopic = (newTopic) => {
   return async (dispatch) => {
