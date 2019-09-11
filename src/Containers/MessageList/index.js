@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+import io from 'socket.io-client';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
@@ -20,14 +21,20 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+let socket;
+
 const MessageList = (props) => {
   const classes = useStyles();
 
   useEffect(() => {
-    if (props.getMessages) {
-      props.getMessages()
-    };
-  }, []);
+    if (!socket) {
+      socket = io(':3001')
+    }
+
+    socket.on('all messages', function (msgs) {
+      props.getMessages(msgs);
+    });
+  }, [props.messages.length])
 
   return (
     <div className={classes.thread}>

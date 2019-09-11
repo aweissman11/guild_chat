@@ -154,13 +154,12 @@ export const mapStateToProps = ({
   topics,
   currentTopic,
   username
-})
-
+});
 
 export const mapDispatchToProps = (dispatch) => ({
   addNewMessage: (message) => dispatch(addNewMessage(message)),
   getTopics: (topics) => dispatch(getTopics(topics)),
   setUsername: (user) => dispatch(setUsername(user))
-})
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(InputBox);
