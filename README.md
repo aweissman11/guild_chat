@@ -65,4 +65,15 @@ Then, open a duplicate tab and the two tabs will be able to communicate with eac
 * Time constraints
   * This project was done while sneaking time in where I could. I am working full time and had friends visiting from out of town for the entire time I worked on this. So, finding the time to work on this was a challenge, and even harder was finding long stretches of time. It takes some ramp-up time to really dive into these things and I am proud to have accomplished what I did in small spurts and without many long stretches of time to really lock in.
 
+## Future enhancements
 
+* Persistant data
+  * Save chat messages in a backend somewhere so that when you connect to a topic, you can see the previous messages that were sent.
+  * Cache username and login.
+* Deploy the application so it can be used live on the web
+* UI enhancements to allow for a smoother user flow
+  * For example:
+    * autofocus on input fields when they appear.
+    * Alow user to change their username without refreshing.
+    * Allow topics to be deleted or removed from the list.
+    * Show different colors for the current user as opposed to other users in the chat.
