@@ -18,6 +18,12 @@ Runs the server locally. Will need to be run in a separate terminal instance tha
 
 Launches the test runner in the interactive watch mode.<br>
 
+## How to use
+
+This app is available to use locally. Run npm start in one terminal instance, and then run the node server in another. The app will be live at localhost:3000.
+
+Then, open a duplicate tab and the two tabs will be able to communicate with each other as long as they are on the same topic.
+
 ## Initial WireFrames
 
 ![Wireframe](wireframes.png)
@@ -55,10 +61,8 @@ Launches the test runner in the interactive watch mode.<br>
 * Socket.io
   * Putting this here as well because the app works! That means I successfully sed something new, which is a win in my book.
 * Hooks
-  * I am continuing to learn the ins and outs of React Hooks, but am glad I was able to use them throughout the appplication without any huge pitfalls
+  * I am continuing to learn the ins and outs of React Hooks, but am glad I was able to use them throughout the appplication without any huge pitfalls to the functionality of  the application.
 * Time constraints
   * This project was done while sneaking time in where I could. I am working full time and had friends visiting from out of town for the entire time I worked on this. So, finding the time to work on this was a challenge, and even harder was finding long stretches of time. It takes some ramp-up time to really dive into these things and I am proud to have accomplished what I did in small spurts and without many long stretches of time to really lock in.
-* Deployment to AWS
-  * This was surprisingly straightforward. It's definitely not to a point that I would want a production application to be, but it's great to be able to see the app running live on the web.
 
 
