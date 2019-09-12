@@ -42,7 +42,7 @@ export const TopicList = (props) => {
     if (props.getTopics) {
       props.getTopics();
     }
-  });
+  }, []);
 
   const [open, setOpen] = React.useState(false);
 

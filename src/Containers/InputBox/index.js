@@ -49,7 +49,7 @@ export const InputBox = (props) => {
     if (props.getTopics) {
       props.getTopics();
     }
-  });
+  }, []);
 
   const handleChange = (e) => {
     setInputText(e.target.value);
